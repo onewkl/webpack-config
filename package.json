@@ -1,10 +1,10 @@
 {
-  "name": "@talentui/webpack-config",
-  "version": "1.4.3",
+  "name": "@tita/webpack-config",
+  "version": "1.0.0",
   "main": "./webpack.config.js",
   "author": {
-    "name": "Li Guoming",
-    "email": "liguoming@beisen.com"
+    "name": "lianghs",
+    "email": "lianghs@tita.com"
   },
   "scripts": {
     "precm": "jest",
@@ -14,8 +14,8 @@
   },
   "maintainers": [
     {
-      "name": "Li Guoming",
-      "email": "liguoming@beisen.com"
+      "name": "lianghs",
+      "email": "lianghs@tita.com"
     }
   ],
   "repository": {
