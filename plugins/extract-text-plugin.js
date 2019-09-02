@@ -1,6 +1,6 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { buildProd, globalObjectKey, projType } = require("../constants.js");
-const {projectType} = global[globalObjectKey];
+const {projectType,outputUseHash} = global[globalObjectKey];
 
 let name = '';
 let nameProd = '';
@@ -15,7 +15,7 @@ if(projectType === projType.module){
 }
 
 module.exports = new ExtractTextPlugin({
-    filename: buildProd ? nameProd : name,
+    filename: outputUseHash ? nameProd : name,
     disable: !buildProd,
     allChunks: true
 });

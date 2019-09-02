@@ -34,7 +34,7 @@ module.exports = options => {
     let devServer = dev_server === switchOn;
 
     // 只在生产环境构建且不启动devServer的时候输出文件名字启用hash
-    let outputUseHash = !devServer && buildProd;
+    let outputUseHash = options.outputUseHash;
 
     var config = {
         // 是否启用analysis
